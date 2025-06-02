@@ -6,11 +6,12 @@ Reumatoïde artritis (RA) is een chronische autoimmuunziekte die onder andere ge
 
 ## 📁 Inhoud/structuur
 
-- `data/raw/` – ruwe data verstrekt van de cotrole- en testgroepen uit RNA-seq synoviumbiopt samples
-- `data/processed` - verwerkte datasets gegenereerd met scripts 
-- `scripts/` – scripts voor het uitvoeren van analyses op ruwe data
-- `resultaten/` - grafieken en tabellen
-- `bronnen/` - geraadpleegde bronnen 
+- `BAM/` – gegenereerde BAM-bestanden van ruwe data en humaan genomisch DNA
+- `Ruwe data/` – ruwe data verstrekt van de cotrole- en testgroepen uit RNA-seq synoviumbiopt samples
+- `Data/processed` - verwerkte datasets gegenereerd met scripts 
+- `Scripts/` – scripts voor het uitvoeren van analyses op ruwe data
+- `Resultaten/` - grafieken en tabellen
+- `Bronnen/` - geraadpleegde bronnen 
 - `README.md` - het document om de tekst hier te genereren
 
 
