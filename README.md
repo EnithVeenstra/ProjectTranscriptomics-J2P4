@@ -7,11 +7,11 @@ Heb je Harry Potter nooit gelezen? Moet je echt doen, [klik maar hier](bronnen/h
 
 ## 📁 Inhoud/structuur
 
-- `data/raw/` – fictionele datasets voor de analyse van spreuk effectiviteit, gevaar en welke spreuken het beste samengaan met verschillende types staf.  
+- `data/raw/` – ruwe data verstrekt van de cotrole- en testgroepen uit RNA-seq synoviumbiopt samples
 - `data/processed` - verwerkte datasets gegenereerd met scripts 
-- `scripts/` – scripts om prachtige onzin te genereren
+- `scripts/` – scripts voor het uitvoeren van analyses op ruwe data
 - `resultaten/` - grafieken en tabellen
-- `bronnen/` - gebruikte bronnen 
+- `bronnen/` - geraadpleegde bronnen 
 - `README.md` - het document om de tekst hier te genereren
 - `assets/` - overige documenten voor de opmaak van deze pagina
 - `data_stewardship/` - Voor de competentie beheren ga je aantonen dat je projectgegevens kunt beheren met behulp van GitHub. In deze folder kan je hulpvragen terugvinden om je op gang te helpen met de uitleg van data stewardship. 
