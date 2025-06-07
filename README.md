@@ -1,4 +1,12 @@
 # ProjectTranscriptomics-J2P4
+
+<p align="center">
+  <img src="Toevoegingen/Logo project transcriptomics RA.png" alt="Wizarding Spell Metrics Logo" width="600"/>
+</p>
+
+
+
+
 ## Inleiding
 
 Reumatoïde artritis (RA) is een chronische autoimmuunziekte die onder andere gekenmerkt wordt door gewrichtsontstekingen. Bij autoimuunziekten worden lichaamseigencellen als lichaamsvreemd herkend en aangevallen door het immuunsysteem. Hoewel de oorzaken van RA niet volledig in kaart gebracht zijn, spelen genetica en omgevingsfactoren, zoals roken of blootstelling aan gevaarlijke stoffen, een mogelijke rol in het veroorzaken van chronische gewrichtsontekingen. (BRON). Differentiële genexpressie spreekt daarnaast mogelijk ook een rol bij de 
