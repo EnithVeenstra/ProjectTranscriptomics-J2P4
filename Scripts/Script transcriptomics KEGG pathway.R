@@ -13,4 +13,3 @@ pathview(gene.data = gene_vector,
          kegg.native = TRUE)
 
 hsa04110.cellcycle.pathview.png
-
