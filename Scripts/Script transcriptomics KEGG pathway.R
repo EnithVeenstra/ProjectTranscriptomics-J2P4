@@ -5,7 +5,7 @@ gene_vector <- resultatenproject$log2FoldChange
 names(gene_vector) <- rownames(resultatenproject)
 
 
-# KEGG map00061 = Fatty acid biosynthesis → pathway ID = "00061"
+# KEGG map00061 = Fatty acid biosynthesis → pathway ID = "04110"
 pathview(gene.data = gene_vector,
          pathway.id = "hsa04110",
          species = "hsa",  
