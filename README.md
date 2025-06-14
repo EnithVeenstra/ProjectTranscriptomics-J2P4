@@ -1,7 +1,7 @@
 # ProjectTranscriptomics-J2P4
 
 <p align="center">
-  <img src="Toevoegingen/Logo transcriptomics RA.png" alt="Wizarding Spell Metrics Logo" width="600"/>
+  <img src="Toevoegingen/Logo project transcriptomics RA.png" alt="Wizarding Spell Metrics Logo" width="600"/>
 </p>
 
 
