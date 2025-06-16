@@ -1,4 +1,4 @@
-# ProjectTranscriptomics-J2P4
+# Differentiële genexpressie in patiënten met reumatoïde artritis: TLR-signalering wordt omhoog gereguleerd
 
 <p align="center">
   <img src="Toevoegingen/Logo transcriptomics RA.png" alt="Logo transcriptomics RA" width="600"/>
