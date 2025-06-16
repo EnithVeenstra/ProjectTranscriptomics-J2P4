@@ -33,10 +33,10 @@ Reumatoïde artritis (RA) is een chronische autoimmuunziekte die onder andere ge
 
 Voor het onderzoek naar RA is er gewerkt met een groep van 4 personen zonder RA en 4 personen met een RA-diagnose van >12 jaar. De samples zijn verkregen door middel van een synoviumbiopt. Personen met RA testten positief op anti-CCP (ACPA), personen zonder RA hebben negatief getest op ACPA. 
 
+De ruwe data (map: ) is bewerkt voor analyse met behulp van [Scripts/Script transcriptomics ruwe data verwerking.R](Scripts/Script transcriptomics ruwe data verwerking.R). Op de bewerkte data zijn vervolgens GO-analyses [Resultaten/GO_dotplot.pdf](Resultaten/GO_dotplot.pdf)en KEGG pathways op uitgevoerd voor de celcyclus [Resultaten/hsa04110.pathview.png](Resultaten/hsa04110.pathview.png) en toll-like receptor (TLR) signalering [Resultaten/hsa04620.pathview.png](Resultaten/hsa04620.pathview.png)
 
 De data van het humaan genomisch DNA waarmee de ruwe data mee vergeleken en geanalyseerd is, is verkregen uit de NCBI database. 
 
-De ruwe data van spreuken is eerst bewerkt voor analyse met behulp van [scripts/01_clean_spell_data.R](scripts/01_clean_spell_data.R). Vervolgens zijn de spreuken geanalyseerd op kracht en nauwkeurigheid met [scripts/02_spell_analysis.R](scripts/02_spell_analysis.R).
 
 ## 📊 Resultaten
 
