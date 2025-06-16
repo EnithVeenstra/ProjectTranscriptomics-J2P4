@@ -1,7 +1,7 @@
 # ProjectTranscriptomics-J2P4
 
 <p align="center">
-  <img src="Toevoegingen/Logo transcriptomics RA.png" alt="Wizarding Spell Metrics Logo" width="600"/>
+  <img src="Toevoegingen/Logo transcriptomics RA.png" alt="Logo transcriptomics RA" width="600"/>
 </p>
 
 
@@ -14,14 +14,18 @@ Reumatoïde artritis (RA) is een chronische autoimmuunziekte die onder andere ge
 
 ## 📁 Inhoud/structuur
 
-- `BAM` – gegenereerde BAM-bestanden van ruwe data en humaan genomisch DNA
-- `Bronnen` - geraadpleegde bronnen
-- `Data/processed` - verwerkte datasets gegenereerd met scripts
-- `README.md` - het document om de tekst hier te genereren
+- `Data stewardship` – Toelichting competentie 'beheren' en uitleg GitHub
 - `Resultaten` - grafieken en tabellen
 - `Ruwe data` – ruwe data verstrekt van de cotrole- en testgroepen uit RNA-seq synoviumbiopt samples
 - `Scripts` – scripts voor het uitvoeren van analyses op ruwe data
 - `Toevoegingen` – logo project Transcriptomics voor GitHub
+- `Verwerkte data` - verwerkte datasets gegenereerd met R-scripts
+- `Bronnen` - geraadpleegde bronnen
+- `README.md` - het document om de tekst hier te genereren
+
+
+
+
 
 
 ---
@@ -29,10 +33,10 @@ Reumatoïde artritis (RA) is een chronische autoimmuunziekte die onder andere ge
 
 Voor het onderzoek naar RA is er gewerkt met een groep van 4 personen zonder RA en 4 personen met een RA-diagnose van >12 jaar. De samples zijn verkregen door middel van een synoviumbiopt. Personen met RA testten positief op anti-CCP (ACPA), personen zonder RA hebben negatief getest op ACPA. 
 
+De ruwe data is bewerkt voor analyse met behulp van [Scripts/Script_transcriptomics_ruwe_data_verwerking.R](Scripts/Script_transcriptomics_ruwe_data_verwerking.R). Op de bewerkte data zijn vervolgens GO-analyses [Resultaten/GO_dotplot.pdf](Resultaten/GO_dotplot.pdf) en KEGG pathways op uitgevoerd voor de celcyclus [Resultaten/hsa04110.pathview.png](Resultaten/hsa04110.pathview.png) en toll-like receptor (TLR) signalering [Resultaten/hsa04620.pathview.png](Resultaten/hsa04620.pathview.png)
 
 De data van het humaan genomisch DNA waarmee de ruwe data mee vergeleken en geanalyseerd is, is verkregen uit de NCBI database. 
 
-De ruwe data van spreuken is eerst bewerkt voor analyse met behulp van [scripts/01_clean_spell_data.R](scripts/01_clean_spell_data.R). Vervolgens zijn de spreuken geanalyseerd op kracht en nauwkeurigheid met [scripts/02_spell_analysis.R](scripts/02_spell_analysis.R).
 
 ## 📊 Resultaten
 
