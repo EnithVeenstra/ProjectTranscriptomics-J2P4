@@ -1,7 +1,7 @@
 # ProjectTranscriptomics-J2P4
 
 <p align="center">
-  <img src="Toevoegingen/Logo transcriptomics RA.png" alt="Wizarding Spell Metrics Logo" width="600"/>
+  <img src="Toevoegingen/Logo transcriptomics RA.png" alt="Logo transcriptomics RA" width="600"/>
 </p>
 
 
@@ -14,14 +14,18 @@ Reumatoïde artritis (RA) is een chronische autoimmuunziekte die onder andere ge
 
 ## 📁 Inhoud/structuur
 
-- `BAM` – gegenereerde BAM-bestanden van ruwe data en humaan genomisch DNA
-- `Bronnen` - geraadpleegde bronnen
-- `Data/processed` - verwerkte datasets gegenereerd met scripts
-- `README.md` - het document om de tekst hier te genereren
+- `Data stewardship` – Toelichting competentie 'beheren' en uitleg GitHub
 - `Resultaten` - grafieken en tabellen
 - `Ruwe data` – ruwe data verstrekt van de cotrole- en testgroepen uit RNA-seq synoviumbiopt samples
 - `Scripts` – scripts voor het uitvoeren van analyses op ruwe data
 - `Toevoegingen` – logo project Transcriptomics voor GitHub
+- `Verwerkte data` - verwerkte datasets gegenereerd met R-scripts
+- `Bronnen` - geraadpleegde bronnen
+- `README.md` - het document om de tekst hier te genereren
+
+
+
+
 
 
 ---
