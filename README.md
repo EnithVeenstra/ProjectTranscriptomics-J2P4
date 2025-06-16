@@ -35,7 +35,7 @@ Voor het onderzoek naar RA is er gewerkt met een groep van 4 personen zonder RA 
 
 De ruwe data is bewerkt voor analyse met behulp van [Scripts/Script_transcriptomics_ruwe_data_verwerking.R](Scripts/Script_transcriptomics_ruwe_data_verwerking.R) in R-studio. Op de bewerkte data zijn vervolgens GO-analyses met een dotplot [Resultaten/GO_dotplot.pdf](Resultaten/GO_dotplot.pdf) en een top 10 enrichment analyse [Resultaten/top10_GO_enrichment_dotplot.pdf](Resultaten/top10_GO_enrichment_dotplot.pdf) en KEGG pathways op uitgevoerd voor de celcyclus [Resultaten/hsa04110.pathview.png](Resultaten/hsa04110.pathview.png) en toll-like receptor (TLR) signalering [Resultaten/hsa04620.pathview.png](Resultaten/hsa04620.pathview.png)
 
-De data van het humaan genomisch DNA waarmee de ruwe data mee vergeleken en geanalyseerd is, is verkregen uit de NCBI database. 
+De data van het humaan genomisch DNA, waarmee de ruwe data vergeleken en geanalyseerd is, is verkregen uit de NCBI database. 
 
 
 ## 📊 Resultaten
