@@ -9,7 +9,7 @@
 
 ## Inleiding
 
-Reumatoïde artritis (RA) is een chronische autoimmuunziekte die onder andere gekenmerkt wordt door gewrichtsontstekingen. De ziekte is progressief en kan naast gewrichtsontstekingen ook andere organen, zoals het hart en de longen, aantasten. Bij autoimuunziekten worden lichaamseigencellen als lichaamsvreemd herkend en aangevallen door het immuunsysteem. Hoewel de oorzaken van RA niet volledig in kaart gebracht zijn, spelen genetica en omgevingsfactoren, zoals roken of blootstelling aan gevaarlijke stoffen, een mogelijke rol in het veroorzaken van chronische gewrichtsontekingen [Qiang Guo et al., 2012](Bronnen/41413_2018_Article_16.pdf). Hormonen hebben mogelijk ook invloed; bij vrouwen wordt er gemiddeld drie keer vaker RA gediagnosticeerd dan bij mannen. Differentiële genexpressie zou tot slot oorzakelijk voor het ontstaan van RA of de progressie van de ziekte kunnen zijn. Tijdens dit onderzoek wordt er gekeken naar differentiële genexpressie in vrouwlijke patiënten met RA ten op zichte van vrouwlijke patiënten zonder RA [Gerosa M et al., 2008](Bronnen/gerosa-et-al-2008-rheumatoid-arthritis-a-female-challenge.pdf). Hierbij is de volgende onderzoeksvraag opgesteld: in welke hoeveelheid kan differentiële genexpressie tussen gezonde patiënten en patiënten met RA worden bepaald doormiddel van een visualisatie van een GO-analyse en een KEGG pathway?
+Reumatoïde artritis (RA) is een chronische autoimmuunziekte die onder andere gekenmerkt wordt door gewrichtsontstekingen. De ziekte is progressief en kan naast gewrichtsontstekingen ook andere organen, zoals het hart en de longen, aantasten. Bij autoimuunziekten worden lichaamseigencellen als lichaamsvreemd herkend en aangevallen door het immuunsysteem. Hoewel de oorzaken van RA niet volledig in kaart gebracht zijn, spelen genetica en omgevingsfactoren, zoals roken of blootstelling aan gevaarlijke stoffen, een mogelijke rol in het veroorzaken van chronische gewrichtsontekingen [Qiang Guo et al., 2012](Bronnen/41413_2018_Article_16.pdf). Hormonen hebben mogelijk ook invloed; bij vrouwen wordt er gemiddeld drie keer vaker RA gediagnosticeerd dan bij mannen. Differentiële genexpressie zou tot slot oorzakelijk voor het ontstaan van RA of de progressie van de ziekte kunnen zijn. Tijdens dit onderzoek wordt er gekeken naar differentiële genexpressie in vrouwlijke patiënten met RA ten op zichte van vrouwlijke patiënten zonder RA [Gerosa M et al., 2008](Bronnen/gerosa-et-al-2008-rheumatoid-arthritis-a-female-challenge.pdf). Hierbij is de volgende onderzoeksvraag opgesteld: in welke hoeveelheid kan differentiële genexpressie tussen gezonde patiënten en patiënten met RA worden bepaald doormiddel van een visualisatie van een GO-analyse en een KEGG-pathway?
 
 
 ## Inhoud/structuur
@@ -38,58 +38,10 @@ De werkwijze is schematisch uitgezet in een [flowschema](Toevoegingen/Flowschema
 
 ## Resultaten
 
-X-AS: Hoe lager de p-waarde, hoe hoger deze waarde en dus hoe meer significant het GO-term is.
-Bijvoorbeeld: -log10(1e-15) = 15 betekent een p-waarde van 1×10⁻¹⁵ (erg significant).
-
-Y-as:
-Dit zijn de GO-termen (biologische processen, moleculaire functies of celcomponenten) die verrijkt zijn in je dataset.
-
-Geel tot rood kleurverloop geeft de significantie van de verrijking aan.
-Rood = lage p-waarde = hoge significantie.
-Geel = minder significant.
-
-Grootte van de stip:
-
-Geeft het aantal genen aan die geassocieerd zijn met het betreffende GO-term in jouw dataset.
-Grotere stip = meer genen betrokken.
-
-Voorbeeldinterpretaties
-"Immune system process" heeft een grote rode stip, wat betekent:
-Veel genen in je lijst zijn betrokken bij dit proces.
-Het is zeer significant verrijkt (lage p-waarde).
-"Regulation of immune system process" is geel en klein:
-Weinig genen.
-Minder significant.
+Voor het bepalen van de differentiële genexpressie is er een GO-(enrichment)analyse uitgewerkt met behulp van het ClusterProfiler package in R-Studio. Uit de [GO-enrichmentanalyse](Resultaten/top10_GO_enrichment_dotplot.pdf) blijkt een sterke toename in genexpressie omtrent het immuunsysteem. Genen o.a. verantwoordelijk voor de immuunrepons, immuunsysteemrepons en immunoglobuline tonen een verhoogde expressie. Uit de GO-analyse (uitgewerkt als [dotplot](Resultaten/GO_dotplot.pdf) resulteert daarnaast een lymfocytactivatie en ook een verhoogde expressie in immunoglobuline.
 
 
-
-
-Belangrijke observaties in deze figuur
-"Immunoglobulin complex":
-Hoogste Hits (%) (>55%)
-Zeer lage p-waarde (paarsroze): extreem significant.
-Weinig andere GO-termen hebben zo'n hoge hitscore → suggereert een zeer specifieke immuunfunctie.
-"Immune response" en "Immune system process":
-Ook vrij hoge hits (~30%).
-Significante p-waarden (oranje).
-Bevestigt de rol van immuunactivatie.
-"Intracellular anatomical structure":
-Laag Hits %, maar zeer significante p-waarde (paars).
-Veel genen (grote stip), maar wijdverspreid → mogelijk generiek maar statistisch oververtegenwoordigd.
-
-Samenvatting en interpretatie
-Deze resultaten laten zien dat jouw genenset sterk verrijkt is voor immuun-gerelateerde functies, met name:
-Antilichaamstructuren (immunoglobuline complex)
-Immuunrespons
-Celcomponenten zoals nucleus en organellen
-De combinatie van lage p-waarden, hoge Hits (%), en grote stippen (veel genen) maakt sommige GO-termen bijzonder relevant voor verder onderzoek.
-
-
-
-
-
-
-Aan de hand van het Pathview package in R-Studio is een KEGG pathway-analyse uitgezet voor zowel de celcyclus als de TLR-signalering (immuunsysteem). De [celcyclus pathway](Resultaten/hsa04110.pathview.png) toont een omhoog regulatie van mitotische genen, daarnaast zijn tumorrepressoren, zoals p53 en CDK-inhibitoren, omlaag gereguleerd. De omhoog regulatie van de mitotische genen en omlaag regulatie van de tumorrepressoren duidt op een activatie van het immuunsysteem, voornamelijk bij lymfocyten. Uit de [TLR pathway-analyse](Resultaten/hsa04620.pathview.png) blijkt een verhoogde expressie in de route van de MyD88-afhankelijke TLR; MyD88, FADD en RIP1 tonen een verhoogde genexpressie. Genen binnen dezelfde route, IRF3 en IRF7, hebben een verlaagde genexpressie. Voornamelijk de verhoogde genexpressie suggereert een ontstekingsreactie.
+Aan de hand van het Pathview package in R-Studio is een KEGG pathway-analyse uitgezet voor zowel de celcyclus als de TLR-signalering (immuunsysteem). De [celcyclus pathway-analyse](Resultaten/hsa04110.pathview.png) toont een omhoog regulatie van mitotische genen, daarnaast zijn tumorrepressoren, zoals p53 en CDK-inhibitoren, omlaag gereguleerd. De omhoog regulatie van de mitotische genen en omlaag regulatie van de tumorrepressoren duidt op een activatie van het immuunsysteem, voornamelijk bij lymfocyten. Uit de [TLR pathway-analyse](Resultaten/hsa04620.pathview.png) blijkt een verhoogde expressie in de route van de MyD88-afhankelijke TLR; MyD88, FADD en RIP1 tonen een verhoogde genexpressie. Genen binnen dezelfde route, IRF3 en IRF7, hebben een verlaagde genexpressie. Voornamelijk de verhoogde genexpressie suggereert een ontstekingsreactie.
 
 
 
