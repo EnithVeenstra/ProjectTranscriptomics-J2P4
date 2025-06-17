@@ -9,19 +9,18 @@
 
 ## Inleiding
 
-Reumatoïde artritis (RA) is een chronische autoimmuunziekte die onder andere gekenmerkt wordt door gewrichtsontstekingen. De ziekte is progressief en kan naast gewrichtsontstekingen ook andere organen, zoals het hart en de longen, aantasten. Bij autoimuunziekten worden lichaamseigencellen als lichaamsvreemd herkend en aangevallen door het immuunsysteem. Hoewel de oorzaken van RA niet volledig in kaart gebracht zijn, spelen genetica en omgevingsfactoren, zoals roken of blootstelling aan gevaarlijke stoffen, een mogelijke rol in het veroorzaken van chronische gewrichtsontekingen ([Sushil Kaur, Sarahlouise White et al.
-JBI library of systematic reviews, 10, 42 Suppl, 2012](https://pubmed.ncbi.nlm.nih.gov/28723028/)). Hormonen hebben mogelijk ook invloed; bij vrouwen wordt er gemiddeld drie keer vaker RA gediagnosticeerd dan bij mannen. Differentiële genexpressie zou tot slot oorzakelijk voor het ontstaan van RA of de progressie van de ziekte kunnen zijn. Tijdens dit onderzoek wordt er gekeken naar differentiële genexpressie in vrouwlijke patiënten met RA ten op zichte van vrouwlijke patiënten zonder RA. Hierbij is de volgende onderzoeksvraag opgesteld: in welke hoeveelheid kan differentiële genexpressie tussen gezonde patiënten en patiënten met RA worden bepaald doormiddel van een visualisatie van een GO-analyse en een KEGG pathway?
+Reumatoïde artritis (RA) is een chronische autoimmuunziekte die onder andere gekenmerkt wordt door gewrichtsontstekingen. De ziekte is progressief en kan naast gewrichtsontstekingen ook andere organen, zoals het hart en de longen, aantasten. Bij autoimuunziekten worden lichaamseigencellen als lichaamsvreemd herkend en aangevallen door het immuunsysteem. Hoewel de oorzaken van RA niet volledig in kaart gebracht zijn, spelen genetica en omgevingsfactoren, zoals roken of blootstelling aan gevaarlijke stoffen, een mogelijke rol in het veroorzaken van chronische gewrichtsontekingen [Qiang Guo et al., 2012](Bronnen/41413_2018_Article_16.pdf). Hormonen hebben mogelijk ook invloed; bij vrouwen wordt er gemiddeld drie keer vaker RA gediagnosticeerd dan bij mannen. Differentiële genexpressie zou tot slot oorzakelijk voor het ontstaan van RA of de progressie van de ziekte kunnen zijn. Tijdens dit onderzoek wordt er gekeken naar differentiële genexpressie in vrouwlijke patiënten met RA ten op zichte van vrouwlijke patiënten zonder RA. Hierbij is de volgende onderzoeksvraag opgesteld: in welke hoeveelheid kan differentiële genexpressie tussen gezonde patiënten en patiënten met RA worden bepaald doormiddel van een visualisatie van een GO-analyse en een KEGG pathway?
 
 
 ## 📁 Inhoud/structuur
 
+- `Bronnen` - geraadpleegde bronnen
 - `Data stewardship` – Toelichting competentie 'beheren' en uitleg GitHub
 - `Resultaten` - grafieken en tabellen
 - `Ruwe data` – ruwe data verstrekt van de cotrole- en testgroepen uit RNA-seq synoviumbiopt samples
 - `Scripts` – scripts voor het uitvoeren van analyses op ruwe data
 - `Toevoegingen` – logo project Transcriptomics voor GitHub
 - `Verwerkte data` - verwerkte datasets gegenereerd met R-scripts
-- `Bronnen` - geraadpleegde bronnen
 - `README.md` - het document om de tekst hier te genereren
 
 
@@ -32,7 +31,7 @@ JBI library of systematic reviews, 10, 42 Suppl, 2012](https://pubmed.ncbi.nlm.n
 ---
 ## Methoden
 
-Voor het onderzoek naar RA is er gewerkt met een groep van 4 personen zonder RA en 4 personen met een RA-diagnose van >12 jaar. De samples zijn verkregen door middel van een synoviumbiopt. Personen met RA testten positief op anti-CCP (ACPA), personen zonder RA hebben negatief getest op ACPA (flowschema: [Toevoegingen/Flowschema_project_transcriptomics.png](Toevoegingen/Flowschema_project_transcriptomics.png). De ruwe data is bewerkt voor analyse met behulp van [Scripts/Script_transcriptomics_ruwe_data_verwerking.R](Scripts/Script_transcriptomics_ruwe_data_verwerking.R) in R-studio. Op de bewerkte data zijn vervolgens GO-analyses met een dotplot [Resultaten/GO_dotplot.pdf](Resultaten/GO_dotplot.pdf) en een top 10 enrichment analyse [Resultaten/top10_GO_enrichment_dotplot.pdf](Resultaten/top10_GO_enrichment_dotplot.pdf) en KEGG pathways op uitgevoerd voor de celcyclus [Resultaten/hsa04110.pathview.png](Resultaten/hsa04110.pathview.png) en toll-like receptor (TLR) signalering [Resultaten/hsa04620.pathview.png](Resultaten/hsa04620.pathview.png)
+Voor het onderzoek naar RA is er gewerkt met een groep van 4 personen zonder RA en 4 personen met een RA-diagnose van >12 jaar. De samples zijn verkregen door middel van een synoviumbiopt. Personen met RA testten positief op anti-CCP (ACPA), personen zonder RA hebben negatief getest op ACPA. De werkwijze is schematisch uitgezet in een [flowschema](Toevoegingen/Flowschema_project_transcriptomics.png). De ruwe data is bewerkt voor analyse met behulp van [Scripts/Script_transcriptomics_ruwe_data_verwerking.R](Scripts/Script_transcriptomics_ruwe_data_verwerking.R) in R-studio. Op de bewerkte data zijn vervolgens GO-analyses met een dotplot [Resultaten/GO_dotplot.pdf](Resultaten/GO_dotplot.pdf) en een top 10 enrichment analyse [Resultaten/top10_GO_enrichment_dotplot.pdf](Resultaten/top10_GO_enrichment_dotplot.pdf) en KEGG pathways op uitgevoerd voor de celcyclus [Resultaten/hsa04110.pathview.png](Resultaten/hsa04110.pathview.png) en toll-like receptor (TLR) signalering [Resultaten/hsa04620.pathview.png](Resultaten/hsa04620.pathview.png)
 
 De data van het humaan genomisch DNA, waarmee de ruwe data vergeleken en geanalyseerd is, is verkregen uit de NCBI database. 
 Het verschil in genexpressie is bepaald in R met behulp van het DESeq2 package. Alle reads zijn gemapt in R met Rsubread. 
