@@ -12,7 +12,7 @@
 Reumatoïde artritis (RA) is een chronische autoimmuunziekte die onder andere gekenmerkt wordt door gewrichtsontstekingen. De ziekte is progressief en kan naast gewrichtsontstekingen ook andere organen, zoals het hart en de longen, aantasten. Bij autoimuunziekten worden lichaamseigencellen als lichaamsvreemd herkend en aangevallen door het immuunsysteem. Hoewel de oorzaken van RA niet volledig in kaart gebracht zijn, spelen genetica en omgevingsfactoren, zoals roken of blootstelling aan gevaarlijke stoffen, een mogelijke rol in het veroorzaken van chronische gewrichtsontekingen [Qiang Guo et al., 2012](Bronnen/41413_2018_Article_16.pdf). Hormonen hebben mogelijk ook invloed; bij vrouwen wordt er gemiddeld drie keer vaker RA gediagnosticeerd dan bij mannen. Differentiële genexpressie zou tot slot oorzakelijk voor het ontstaan van RA of de progressie van de ziekte kunnen zijn. Tijdens dit onderzoek wordt er gekeken naar differentiële genexpressie in vrouwlijke patiënten met RA ten op zichte van vrouwlijke patiënten zonder RA [Gerosa M et al., 2008](Bronnen/gerosa-et-al-2008-rheumatoid-arthritis-a-female-challenge.pdf). Hierbij is de volgende onderzoeksvraag opgesteld: in welke hoeveelheid kan differentiële genexpressie tussen gezonde patiënten en patiënten met RA worden bepaald doormiddel van een visualisatie van een GO-analyse en een KEGG pathway?
 
 
-## 📁 Inhoud/structuur
+## Inhoud/structuur
 
 - `Bronnen` - geraadpleegde bronnen
 - `Data stewardship` – Toelichting competentie 'beheren' en uitleg GitHub
@@ -24,28 +24,19 @@ Reumatoïde artritis (RA) is een chronische autoimmuunziekte die onder andere ge
 - `README.md` - het document om de tekst hier te genereren
 
 
-
-
-
-
 ---
 ## Methoden
 
-Voor het onderzoek naar RA is er gewerkt met een groep van 4 personen zonder RA en 4 personen met een RA-diagnose van >12 jaar. De samples zijn verkregen door middel van een synoviumbiopt. Personen met RA testten positief op anti-CCP (ACPA), personen zonder RA hebben negatief getest op ACPA. De werkwijze is schematisch uitgezet in een [flowschema](Toevoegingen/Flowschema_project_transcriptomics.png). De ruwe data is bewerkt voor analyse met behulp van [Scripts/Script_transcriptomics_ruwe_data_verwerking.R](Scripts/Script_transcriptomics_ruwe_data_verwerking.R) in R-studio. Op de bewerkte data zijn vervolgens GO-analyses met een dotplot [Resultaten/GO_dotplot.pdf](Resultaten/GO_dotplot.pdf) en een top 10 enrichment analyse [Resultaten/top10_GO_enrichment_dotplot.pdf](Resultaten/top10_GO_enrichment_dotplot.pdf) en KEGG pathways op uitgevoerd voor de celcyclus [Resultaten/hsa04110.pathview.png](Resultaten/hsa04110.pathview.png) en toll-like receptor (TLR) signalering [Resultaten/hsa04620.pathview.png](Resultaten/hsa04620.pathview.png)
+Voor het onderzoek naar RA is er gewerkt met een groep van 4 personen zonder RA en 4 personen met een RA-diagnose van >12 jaar. Personen met RA testten positief op anti-CCP (ACPA), personen zonder RA hebben negatief getest op ACPA. De samples zijn afkomstig uit een synoviumbiopt. Na het isoleren van het RNA uit de monsters, waren de samples (RNA omgezet naar cDNA met reverse transcriptase) gesequenced met Ilumina MiSeq voor paired-end sequencing. De gesequencete reads zijn na een kwaliteitscontrole gefiltered en getrimd. De reads zijn gemapt in R-studio (package: Rsubread) met een FASTA-bestand van de haploïde sequentie van het humaan referentiegenoom uit de NCBI database (accessionnummer: GCF_000001405.25), met BAM-bestanden als output. De ruwe data is bewerkt voor analyse in [Scripts/Script_transcriptomics_ruwe_data_verwerking.R](Scripts/Script_transcriptomics_ruwe_data_verwerking.R) in R-studio.
 
-De data van het humaan genomisch DNA, waarmee de ruwe data vergeleken en geanalyseerd is, is verkregen uit de NCBI database. 
-Het verschil in genexpressie is bepaald in R met behulp van het DESeq2 package. Alle reads zijn gemapt in R met Rsubread. 
+Voor een differentiële genexpressie-analyse is er een Gene Ontology (GO) analyse uitgezet. Op de bewerkte data zijn vervolgens GO-analyses met een dotplot [Resultaten/GO_dotplot.pdf](Resultaten/GO_dotplot.pdf) en een top 10 enrichment analyse [Resultaten/top10_GO_enrichment_dotplot.pdf](Resultaten/top10_GO_enrichment_dotplot.pdf) en KEGG pathway-analyses op uitgevoerd voor de celcyclus [Resultaten/hsa04110.pathview.png](Resultaten/hsa04110.pathview.png) en voor de toll-like receptor (TLR) signalering [Resultaten/hsa04620.pathview.png](Resultaten/hsa04620.pathview.png). Het verschil in genexpressie is bepaald in R met behulp van het DESeq2 package. De GO-analyse is uitgwerkt met het ClusterProfiler package.
 
-
-
-Je beschrijft de gebruikte methoden zodat je onderzoek reproduceerbaar is. Je beschrijft in ieder geval de dataset, de sequencingmethode, het mappen van de reads, de differentiele genexpressie-analyse, de KEGG pathway-analyse en de gene ontology analyse. Je gebruikt een stroomschema om de gebruikte methoden inzichtelijk te maken. Je GitHub bevat het script dat je voor de analyse hebt gebruikt met heldere documentatie.
+De werkwijze is schematisch uitgezet in een [flowschema](Toevoegingen/Flowschema_project_transcriptomics.png).
 
 
 
 
-
-
-## 📊 Resultaten
+## Resultaten
 
 X-AS: Hoe lager de p-waarde, hoe hoger deze waarde en dus hoe meer significant het GO-term is.
 Bijvoorbeeld: -log10(1e-15) = 15 betekent een p-waarde van 1×10⁻¹⁵ (erg significant).
