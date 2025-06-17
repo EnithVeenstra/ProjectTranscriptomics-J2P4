@@ -16,7 +16,7 @@ Reumatoïde artritis (RA) is een chronische autoimmuunziekte die onder andere ge
 
 - `Bronnen` - geraadpleegde bronnen
 - `Data stewardship` – Toelichting competentie 'beheren' en uitleg GitHub
-- `Resultaten` - grafieken en tabellen
+- `Resultaten` - grafieken en pathways
 - `Ruwe data` – ruwe data verstrekt van de cotrole- en testgroepen uit RNA-seq synoviumbiopt samples
 - `Scripts` – scripts voor het uitvoeren van analyses op ruwe data
 - `Toevoegingen` – logo project Transcriptomics voor GitHub
@@ -86,11 +86,11 @@ De combinatie van lage p-waarden, hoge Hits (%), en grote stippen (veel genen) m
 
 
 
-Genexpressieanalyse van het KEGG celcycluspad toont:
-Upregulatie van mitotische en cohesine-gerelateerde genen.
-Downregulatie van tumorsuppressoren zoals p53 en CDK-inhibitoren.
-GO-enrichmentanalyse wijst op sterke verrijking van processen in het immuunsysteem, zoals lymfocytactivatie en immuunrespons.
-Biasanalyse van differentiële expressie toont een expressie-afhankelijke verdeling, mogelijk wijzend op een technologische of biologische bias.
+
+
+
+Aan de hand van het Pathview package in R-Studio is een KEGG pathway-analyse uitgezet voor zowel de celcyclus als de TLR-signalering (immuunsysteem). De [celcyclus pathway](Resultaten/hsa04110.pathview.png) toont een omhoog regulatie van mitotische genen, daarnaast zijn tumorrepressoren, zoals p53 en CDK-inhibitoren, omlaag gereguleerd. De omhoog regulatie van de mitotische genen en omlaag regulatie van de tumorrepressoren duidt op een activatie van het immuunsysteem, voornamelijk bij lymfocyten. Uit de [TLR pathway-analyse](Resultaten/hsa04620.pathview.png) blijkt een verhoogde expressie in de route van de MyD88-afhankelijke TLR; MyD88, FADD en RIP1 tonen een verhoogde genexpressie. Genen binnen dezelfde route, IRF3 en IRF7, hebben een verlaagde genexpressie. Voornamelijk de verhoogde genexpressie suggereert een ontstekingsreactie.
+
 
 
 
