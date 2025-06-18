@@ -15,7 +15,7 @@ Reumatoïde artritis (RA) is een chronische autoimmuunziekte die onder andere ge
 ## Inhoud/structuur
 
 - `Bronnen` - geraadpleegde bronnen
-- `Data_stewardship` – Toelichting competentie 'beheren' en uitleg GitHub
+- `Data_stewardship` – toelichting competentie 'beheren' en uitleg GitHub
 - `Resultaten` - grafieken en pathways
 - `Ruwe_data` – ruwe data verstrekt van de cotrole- en testgroepen uit RNA-seq synoviumbiopt samples
 - `Scripts` – scripts voor het uitvoeren van analyses op ruwe data
