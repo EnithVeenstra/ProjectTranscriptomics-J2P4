@@ -15,19 +15,19 @@ Reumatoïde artritis (RA) is een chronische autoimmuunziekte die onder andere ge
 ## Inhoud/structuur
 
 - `Bronnen` - geraadpleegde bronnen
-- `Data stewardship` – Toelichting competentie 'beheren' en uitleg GitHub
+- `Data_stewardship` – Toelichting competentie 'beheren' en uitleg GitHub
 - `Resultaten` - grafieken en pathways
-- `Ruwe data` – ruwe data verstrekt van de cotrole- en testgroepen uit RNA-seq synoviumbiopt samples
+- `Ruwe_data` – ruwe data verstrekt van de cotrole- en testgroepen uit RNA-seq synoviumbiopt samples
 - `Scripts` – scripts voor het uitvoeren van analyses op ruwe data
 - `Toevoegingen` – logo project Transcriptomics voor GitHub
-- `Verwerkte data` - verwerkte datasets gegenereerd met R-scripts
+- `Verwerkte_data` - verwerkte datasets gegenereerd met R-scripts
 - `README.md` - het document om de tekst hier te genereren
 
 
 ---
 ## Methoden
 
-Voor het onderzoek naar RA is er gewerkt met een groep van 4 personen zonder RA en 4 personen met een RA-diagnose van >12 jaar. Personen met RA testten positief op anti-CCP (ACPA), personen zonder RA hebben negatief getest op ACPA. De samples zijn afkomstig uit een synoviumbiopt. Na het isoleren van het RNA uit de monsters, waren de samples (RNA omgezet naar cDNA met reverse transcriptase) gesequenced met Ilumina MiSeq voor paired-end sequencing. De gesequencete reads zijn na een kwaliteitscontrole gefiltered en getrimd. De reads zijn gemapt in R-studio (package: Rsubread) met een FASTA-bestand van de haploïde sequentie van het humaan referentiegenoom uit de NCBI database (accessionnummer: GCF_000001405.25), met BAM-bestanden als output. De [ruwe data](Scripts/Script_transcriptomics_ruwe_data_verwerking.R) is bewerkt voor analyse in R-studio.
+Voor het onderzoek naar RA is er gewerkt met een groep van 4 personen zonder RA en 4 personen met een RA-diagnose van >12 jaar. Personen met RA testten positief op anti-CCP (ACPA), personen zonder RA hebben negatief getest op ACPA. De samples zijn afkomstig uit een synoviumbiopt. Na het isoleren van het RNA uit de monsters, waren de samples (RNA omgezet naar cDNA met reverse transcriptase) gesequenced met Ilumina MiSeq voor paired-end sequencing. De gesequencete reads zijn na een kwaliteitscontrole gefiltered en getrimd. De reads zijn gemapt in R-studio (package: Rsubread) met een FASTA-bestand van de haploïde sequentie van het humaan referentiegenoom uit de NCBI database (accessionnummer: GCF_000001405.25), met BAM-bestanden als output. De [ruwe data](Ruwe_data) is bewerkt voor analyse in dit [script](Scripts/Script_transcriptomics_ruwe_data_verwerking.R) met R-studio.
 
 Voor een differentiële genexpressie-analyse is er een Gene Ontology (GO) analyse uitgezet. Voor de GO-analyse is er een GO-wall gebouwd aan de hand van een Probability Weight Function (PWF) object; met het PWF-object (package: goseq) is er een PWF-plot opgezet om inzicht te krijgen in gensignificantie. Op de bewerkte data zijn vervolgens GO-analyses (package: ClusterProfiler) met een [dotplot](Scripts/Script_transcriptomics_GO_dotplot_enrichment_GO_dotplot_percentage.R) en een [top 10 enrichment analyse](Scripts/Script_transcriptomics_GO_dotplot_enrichment_GO_dotplot_percentage.R) en KEGG pathway-analyses op uitgevoerd voor de [celcyclus](Scripts/Script_transcriptomics_KEGG_pathway.R) en voor de [toll-like receptor (TLR) signalering](Scripts/Script_transcriptomics_KEGG_pathway.R). Het verschil in genexpressie is bepaald in R. Met behulp van het DESeq2 package is er een bepaling van de significantie van differentiële genexpressie gemaakt en gevisualiseerd met een [vulcanplot](Scripts/Script_transcriptomics_DESeq2-analyse_volcanoplot.R).
 
