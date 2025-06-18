@@ -38,6 +38,8 @@ De werkwijze is schematisch uitgezet in een [flowschema](Toevoegingen/Flowschema
 
 ## Resultaten
 
+
+
 Voor het bepalen van de differentiële genexpressie is er een GO-(enrichment)analyse uitgewerkt met behulp van het ClusterProfiler package in R-Studio. Uit de [GO-enrichmentanalyse](Resultaten/top10_GO_enrichment_dotplot.pdf) blijkt een sterke toename in genexpressie omtrent het immuunsysteem. Genen o.a. verantwoordelijk voor de immuunrepons, immuunsysteemrepons en immunoglobuline tonen een verhoogde expressie. Uit de GO-analyse (uitgewerkt als [dotplot](Resultaten/GO_dotplot.pdf)) resulteert daarnaast een lymfocytactivatie en ook een verhoogde expressie in immunoglobuline.
 
 
