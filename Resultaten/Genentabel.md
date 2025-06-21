@@ -3,7 +3,7 @@
 |---|---|---|---|---|---|
 | Celcyclus | p53 | Tumorrepressiegen | Regulatie celcyclus, apoptosis, DNA-herstel | Omlaag | Bron |
 | Celcyclus | CDK-inhibitoren | Tumorrepressiegen | Remming van cycline-afhankelijke kinases | Omlaag | Bron |
-| TLR | MyD88 | Adaptereiwit | Immuniteit | Omhoog | Bron |
+| TLR | MyD88 | Adaptereiwit | Immuniteit | Omhoog | [Xiaolong Yu et al.,2024](../Bronnen/bd37ca01daaf1d7cc12f1725e7b56cfb.pdf) |
 | TLR | FADD | Adaptereiwit | Apoptoseregulatie | Omhoog | Bron |
 | TLR | RIP1 | Kinase | Immuniteit en apoptoseregulatie | Omhoog | Bron |
 | TLR | IRF3 | Transcriptiefactor | Immuniteit (viraal) | Omlaag | Bron |
