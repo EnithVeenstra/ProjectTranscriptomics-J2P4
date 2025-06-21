@@ -11,7 +11,7 @@
 - `Bronnen` - geraadpleegde bronnen
 - `Data_stewardship` – toelichting competentie 'beheren' en uitleg GitHub
 - `Resultaten` - grafieken, pathways en tabel
-- `Ruwe_data` – ruwe data verstrekt van de cotrole- en testgroepen uit RNA-seq synoviumbiopt samples
+- `Ruwe_data` – ruwe data verstrekt van de controle- en testgroepen uit RNA-seq synoviumbiopt samples
 - `Scripts` – scripts voor het uitvoeren van analyses op ruwe data
 - `Toevoegingen` – logo project Transcriptomics voor GitHub en flowschema
 - `Verwerkte_data` - verwerkte datasets gegenereerd met R-scripts
