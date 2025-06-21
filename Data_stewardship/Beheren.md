@@ -1,3 +1,5 @@
+# Toelichting competentie beheren
+
 Beheren is een belangrijk onderdeel van een onderzoek, 
 om resultaten concreet en efficiënt te analyseren. Beheren wordt tijdens dit project uitgezet in de vorm van een 
 GitHub-pagina. Door middel van een GitHub-pagina worden niet alleen de resultaten en conclusie kort behandeld, 
