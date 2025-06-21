@@ -1,3 +1,4 @@
+# Uitleg GitHub
 Deze GitHub-pagina wordt voor dit onderzoek ingezet voor het beheren en organiseren van de projectgegevens en verzamelde 
 verwerkte data. Met behulp van een GitHub kan de data georganiseerd worden weergegeven en is het reproduceerbaar voor 
 anderen. 
