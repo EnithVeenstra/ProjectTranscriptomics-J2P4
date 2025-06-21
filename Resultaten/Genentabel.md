@@ -2,7 +2,7 @@
 | KEGG Pathway | Gevonden DE Gen | Type | Functie | Regulatie bij RA | Bron |
 |---|---|---|---|---|---|
 | Celcyclus | p53 | Tumorrepressiegen | Regulatie celcyclus, apoptosis, DNA-herstel | Omlaag | [Ting Zhang et al.,2016](../Bronnen/13075_2016_Article_1161.pdf) |
-| Celcyclus | CDK-inhibitoren | Tumorrepressiegen | Remming van cycline-afhankelijke kinases | Omlaag | [Hamidreza Ebrahimian et al.,2023](../Bronnen/Immunity-Inflam-Disease-2023-Ebrahimian-Altered-expression-of-apoptosis%E2%80%90related-genes-in-rheumatoid-arthritis.pdf) |
+| Celcyclus | CDK-inhibitoren | Tumorrepressiegen | Remming van cycline-afhankelijke kinases | Omlaag | [Hamidreza Ebrahimian et al.,2023](../Bronnen/Immunity.pdf) |
 | TLR | MyD88 | Adaptereiwit | Immuniteit | Omhoog | [Xiaolong Yu et al.,2024](../Bronnen/bd37ca01daaf1d7cc12f1725e7b56cfb.pdf) |
 | TLR | FADD | Adaptereiwit | Apoptoseregulatie | Omhoog | [T Kobayashi et al.,2000](../Bronnen/kobayashi2000.pdf) |
 | TLR | RIP1 | Kinase | Immuniteit en apoptoseregulatie | Omhoog | [Qiong Wang et al.,2023](../Bronnen/fimmu-14-1135014.pdf) |
