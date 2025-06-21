@@ -1,5 +1,5 @@
 
-| KEGG Pathway-analyse | Gevonden (significant differentieel expressie) Gen | Type | Functie | Regulatie bij RA | Bron |
+| KEGG Pathway-analyse | Gevonden significant differentieel expressie Gen | Type | Functie | Regulatie bij RA | Bron |
 |---|---|---|---|---|---|
 | Celcyclus | p53 | Tumorrepressiegen | Regulatie celcyclus, apoptosis, DNA-herstel | Omlaag | [Ting Zhang et al.,2016](../Bronnen/13075_2016_Article_1161.pdf) |
 | Celcyclus | CDK-inhibitoren | Tumorrepressiegen | Remming van cycline-afhankelijke kinases | Omlaag | [Hamidreza Ebrahimian et al.,2023](../Bronnen/Immunity.pdf) |
