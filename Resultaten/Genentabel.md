@@ -1,3 +1,4 @@
+# Genresultaten van KEGG pathway-analyse en GO-analyse
 
 | KEGG Pathway-analyse | Gevonden significant differentieel expressie Gen | Type | Functie | Regulatie bij RA | Bron |
 |---|---|---|---|---|---|
